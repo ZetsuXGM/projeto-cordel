@@ -15,75 +15,81 @@
 
 header {
     text-align: center;
-    color: white;
+    color: #DA7C00;
     background-color: black;
 }
 
 header > h1 {
     font-size: 10vw;
-    padding-top: 50px;
+    padding-top: 74vh;
     font-variant: small-caps;
     font-family: var(--fonte3);
+    text-shadow: 5px 4px 5px #754200a4;
 }
 
 header > p {
-    padding-bottom: 50px;
+    font-variant: small-caps;
+    font-size: large;
+    letter-spacing: 5px;
 }
 
-a {
+.link-do-milton {
     text-decoration: none;
-    color: white;
+    color: yellow;
     font-weight: bolder;
 }
 
 a:hover {
     text-decoration: underline;
-    color: yellow;
+    color: #DA7C00;
 }
 
 section {
+    padding: 10vh 10px 10vh 23px;
     font-family: var(--fonte2);
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 23px;
-    line-height: 2em;
+    line-height: 1.5em;
     font-size: 5vw;
 }
 
-section.normal > p {
-    color: black;
-    background-color: white;
-    padding-bottom: 2em;
+main > section#imagem01 {
+    background-image: url(../imagens/background001.jpg);
 }
 
-section.imagem {
-    background-color: rgba(0, 0, 0, 0.863);
+section#imagem01 {
+    background: black url(../imagens/background001.jpg) right center/cover fixed;
     color: white;
-    background-size: cover;
-    background-position: right center;
-    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.61);
-    background-attachment: fixed;
+    box-shadow: inset -2px 5px 8px #75420063;
 }
 
 .imagem > p {
     text-shadow: 1px 1px 5px black;
     padding: 5px;
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.103);
+    background-color: rgba(0, 0, 0, 0.274);
 }
 
-main > section#imagem01 {
-    background-image: url(../imagens/background001.jpg);
-
-}
-
-main > section#imagem02 {
-    background-image: url(../imagens/background002.jpg);
+section#imagem02 {
+    background: black url(../imagens/background002.jpg) bottom right/cover fixed;
+    color: white;
+    box-shadow: inset -2px 5px 8px rgba(0, 0, 0, 0.603);
 }
 
 footer {
+    font-weight: 600;
+    font-size: larger;
     background-color: black;
     text-align: center;
     color: white;
-    padding: 13px;
+    padding: 25px;
+    box-shadow: inset -2px 3px 5px #75420063;
+}
+
+.link-do-footer {
+    text-decoration: none;
+    color: yellow;
+}
+
+.link-do-footer:hover {
+    color: #DA7C00;
+    text-decoration: underline;
 }
